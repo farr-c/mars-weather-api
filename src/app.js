@@ -20,6 +20,13 @@ app.get('/', (req, res) => {
   });
 });
 
+app.post('/', (req, res) => {
+  res.json({
+    message: 'pee'
+  });
+});
+
+
 app.use('/api/v1', api);
 
 app.use(middlewares.notFound);
